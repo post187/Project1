@@ -340,3 +340,59 @@ a {
 .popular .course_item .btn_book:hover {
   background: var(--primary-color);
 }
+/* ===============feedback=========== */
+.feedback {
+  margin-top: 135px;
+  padding: 96px 0px;
+  background: #2e2100;
+}
+.feedback .feedback_item {
+  display: flex;
+}
+.feedback .feedback_item .avartar {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.feedback_item .info .member_name {
+  margin-top: 18px;
+  font-family: var(--font-heading);
+  color: #f7f7f7;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.42;
+}
+.feedback_item .info .desc {
+  margin-top: 4px;
+  color: #bfbcb2;
+  font-size: 0.8rem;
+  line-height: 1.85;
+}
+.feedback_item .dots {
+  display: flex;
+  margin-top: 28px;
+  gap: 6px;
+}
+.feedback_item .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #634700;
+}
+.feedback_item .dot:hover {
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+.feedback_item .content {
+  width: 66%;
+  margin-left: auto;
+}
+
+.feedback_item blockquote {
+  font-style: italic;
+  font-size: 1.6rem;
+  line-height: 1.54;
+  letter-spacing: 0%;
+  color: #fff;
+}
