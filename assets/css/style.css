@@ -40,7 +40,7 @@ a {
 .heading-lv2 {
   color: #171100;
   font-family: var(--font-heading);
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-weight: 700;
   line-height: 1.27;
   letter-spacing: -0.76px;
@@ -352,9 +352,11 @@ a {
 }
 .feedback .feedback_item {
   display: flex;
-  width: 1170px;
   flex-shrink: 0;
+  min-width: 0;
+  max-width: 100%; /* Không vượt quá .feedback_list */
 }
+
 .feedback .feedback_item .avartar {
   width: 72px;
   height: 72px;
@@ -406,4 +408,40 @@ a {
   line-height: 1.54;
   letter-spacing: 0%;
   color: #fff;
+}
+/* ================feature========== */
+.feature {
+  margin-top: 135px;
+  padding: 65px 0;
+}
+.feature .body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feature .images {
+  display: flex;
+  gap: 30px;
+}
+.feature .images img {
+  width: 270px;
+  height: 405px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.feature .lower {
+  margin-top: 34px;
+}
+.feature .content {
+  width: 41%;
+}
+.feature .desc {
+  margin-top: 16px;
+  color: #5f5b53;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.feature .feature-btn {
+  background: var(--primary-color);
+  margin-top: 32px;
 }
