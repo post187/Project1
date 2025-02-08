@@ -346,8 +346,14 @@ a {
   padding: 96px 0px;
   background: #2e2100;
 }
+.feedback_list {
+  display: flex;
+  overflow: hidden;
+}
 .feedback .feedback_item {
   display: flex;
+  width: 1170px;
+  flex-shrink: 0;
 }
 .feedback .feedback_item .avartar {
   width: 72px;
@@ -384,14 +390,19 @@ a {
   background-color: var(--primary-color);
   cursor: pointer;
 }
+.feedback_item .dot.active {
+  background-color: var(--primary-color);
+  cursor: default;
+}
 .feedback_item .content {
   width: 66%;
   margin-left: auto;
 }
 
 .feedback_item blockquote {
+  padding-left: 30px;
   font-style: italic;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 1.54;
   letter-spacing: 0%;
   color: #fff;
